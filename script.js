@@ -1,6 +1,7 @@
 let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
+let alt = document.querySelector('.formylove');
 
 const screen = document.querySelector('.screen');
 
@@ -18,6 +19,7 @@ function handleSymbol(symbol){
     case 'C':
       buffer = '0';
       runningTotal = 0;
+      alt.style.height = '680px';
       break;
     case '=':
       if(previousOperator === null){
@@ -41,6 +43,9 @@ function handleSymbol(symbol){
     case '÷':
       handleMath(symbol);
       break;
+    case 'Calcular meu amor pela Maria':
+      buffer = 'ERRO, NÃO É POSSÍVEL CALCULAR <3'
+      alt.style.height = '740px';
   }
 }
 
