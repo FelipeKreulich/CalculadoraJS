@@ -45,7 +45,7 @@ function handleSymbol(symbol){
       break;
     case 'Calcular meu amor pela Maria':
       buffer = 'ERRO, NÃO É POSSÍVEL CALCULAR <3'
-      alt.style.height = '740px';
+      alt.style.height = '760px';
   }
 }
 
